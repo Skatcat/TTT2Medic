@@ -93,7 +93,7 @@ end
 function SWEP:SecondaryAttack()
 
 	if ( CLIENT ) then return end
-	if ( !self:CanPrimaryAttack() ) then return end
+	if ( !self:CanSecondaryAttack() ) then return end
 
 	local ent = self.Owner
 	
