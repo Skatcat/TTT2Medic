@@ -51,10 +51,6 @@ function SWEP:Initialize()
 
 	if ( CLIENT ) then return end
 	
-	if self.Weapon:Clip1() <= 0 then
-	self:Remove()
-	end
-
 end
 
 function SWEP:PrimaryAttack()
@@ -93,8 +89,8 @@ end
 function SWEP:SecondaryAttack()
 
 	if ( CLIENT ) then return end
-	if ( !self:CanSecondaryAttack() ) then return end
-
+	if ( self.Weapon:Clip1() < 2 ) then return end
+	
 	local ent = self.Owner
 	
 	local need = self.HealAmount
