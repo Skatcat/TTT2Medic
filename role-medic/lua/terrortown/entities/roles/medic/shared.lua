@@ -1,13 +1,13 @@
 if SERVER then
 	AddCSLuaFile()
 
-	resource.AddFile("materials/vgui/ttt/dynamic/roles/icon_medc.vmt")
+	resource.AddFile("materials/vgui/ttt/dynamic/roles/icon_med.vmt")
 end
 
 -- creates global var "TEAM_SERIALKILLER" and other required things
 -- TEAM_[name], data: e.g. icon, color,...
 roles.InitCustomTeam(ROLE.name, {
-		icon = "vgui/ttt/dynamic/roles/icon_medc",
+		icon = "vgui/ttt/dynamic/roles/icon_med",
 		color = Color(49, 105, 109, 255)
 })
 
