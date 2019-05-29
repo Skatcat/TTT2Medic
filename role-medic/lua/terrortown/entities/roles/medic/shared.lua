@@ -53,14 +53,14 @@ if CLIENT then
 		---------------------------------
 
 		-- maybe this language as well...
-		LANG.AddToLanguage("Deutsch", MEDIC.name, "Überlebender")
+		LANG.AddToLanguage("Deutsch", MEDIC.name, "Sanitäter")
 		LANG.AddToLanguage("Deutsch", "info_popup_" .. MEDIC.name,
-			[[Du bist ein Arzt!
+			[[Du bist ein Sanitäter!
 				Versuche zu überleben und beschütze dein Team, wenn es möglich sein sollte!]])
-		LANG.AddToLanguage("Deutsch", "body_found_" .. MEDIC.abbr, "Er war ein Überlebender...")
-		LANG.AddToLanguage("Deutsch", "search_role_" .. MEDIC.abbr, "Diese Person war ein Überlebender!")
-		LANG.AddToLanguage("Deutsch", "target_" .. MEDIC.name, "Überlebender")
-		LANG.AddToLanguage("Deutsch", "ttt2_desc_" .. MEDIC.name, [[Der Arzt heilt Leute!]])
+		LANG.AddToLanguage("Deutsch", "body_found_" .. MEDIC.abbr, "Er war ein Sanitäter...")
+		LANG.AddToLanguage("Deutsch", "search_role_" .. MEDIC.abbr, "Diese Person war ein Sanitäter!")
+		LANG.AddToLanguage("Deutsch", "target_" .. MEDIC.name, "Sanitäter")
+		LANG.AddToLanguage("Deutsch", "ttt2_desc_" .. MEDIC.name, [[Der Sanitäter heilt Leute!]])
 	end)
 end
 
