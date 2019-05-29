@@ -12,7 +12,6 @@ if CLIENT then
       desc = "Heal yourself for 100HP \nor a friend for up to 25HP \nLeft click to heal a friend \nRight click to heal yourself"
    };
 
-   SWEP.Icon = "vgui/ttt/icon_medkit"
 end
 
 SWEP.Base               = "weapon_tttbase"

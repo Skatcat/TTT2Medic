@@ -1,8 +1,20 @@
-AddCSLuaFile()
+if SERVER then
+	AddCSLuaFile()
 
-ROLE.color = Color(80, 140, 90, 255) -- ...
-ROLE.dkcolor = Color(29, 94, 40, 255) -- ...
-ROLE.bgcolor = Color(175, 255, 140, 255) -- ...
+	resource.AddFile("materials/vgui/ttt/dynamic/roles/icon_medc.vmt")
+end
+
+-- creates global var "TEAM_SERIALKILLER" and other required things
+-- TEAM_[name], data: e.g. icon, color,...
+roles.InitCustomTeam(ROLE.name, {
+		icon = "vgui/ttt/dynamic/roles/icon_medc",
+		color = Color(49, 105, 109, 255)
+})
+
+
+ROLE.color = Color(219, 133, 73, 255) -- ...
+ROLE.dkcolor = Color(219, 133, 73, 255) -- ...
+ROLE.bgcolor = Color(219, 133, 73, 255) -- ...
 ROLE.abbr = "med" -- abbreviation
 ROLE.defaultTeam = TEAM_INNOCENT -- the team name: roles with same team name are working together
 ROLE.defaultEquipment = SPECIAL_EQUIPMENT -- here you can set up your own default equipment
