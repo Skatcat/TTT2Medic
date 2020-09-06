@@ -61,6 +61,18 @@ if CLIENT then
 		LANG.AddToLanguage("Deutsch", "search_role_" .. MEDIC.abbr, "Diese Person war ein Sanitäter!")
 		LANG.AddToLanguage("Deutsch", "target_" .. MEDIC.name, "Sanitäter")
 		LANG.AddToLanguage("Deutsch", "ttt2_desc_" .. MEDIC.name, [[Der Sanitäter heilt Leute!]])
+		
+		---------------------------------
+		
+		LANG.AddToLanguage("Русский", MEDIC.name, "Медик")
+		LANG.AddToLanguage("Русский", "info_popup_" .. MEDIC.name,
+			[[Вы медик!
+				Попробуйте по возможности лечить невиновных товарищей!]])
+		LANG.AddToLanguage("Русский", "body_found_" .. MEDIC.abbr, "Он был медиком...")
+		LANG.AddToLanguage("Русский", "search_role_" .. MEDIC.abbr, "Этот человек был медиком!")
+		LANG.AddToLanguage("Русский", "target_" .. MEDIC.name, "Медик")
+		LANG.AddToLanguage("Русский", "ttt2_desc_" .. MEDIC.name, [[Медик может лечить людей!]])
+
 	end)
 end
 
